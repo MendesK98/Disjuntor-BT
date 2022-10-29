@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Disjuntor BT</string>
+    <string name="id">Identificação:</string>
+    <string name="fabricante">Fabricante:</string>
+    <string name="n_serie">Nº de Série:</string>
+    <string name="Send">Enviar</string>
 </resources>

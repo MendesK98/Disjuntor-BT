@@ -6,30 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".Disjuntores">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img" />
-
     <TextView
         android:id="@+id/tvGuts"
-        android:layout_width="124dp"
-        android:layout_height="18dp"
-        android:text="Foi foi nao"
+        android:layout_width="301dp"
+        android:layout_height="36dp"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textColor="@color/blue2"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/btDados"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@color/white2"
+        android:text="Inserir\nDados"
+        android:textColor="@color/blue2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667" />
+
 </android.support.constraint.ConstraintLayout>

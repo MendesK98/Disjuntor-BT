@@ -17,14 +17,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Intent i = new Intent (this, Disjuntores.class);
-        String msg = "Guts";
+
 
         Button btCadastro = (Button) findViewById(R.id.btCadastro);
         btCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String msg = "Disjuntores de Baixa Tensão";
+                i.putExtra(Intent.EXTRA_TEXT, msg);
                 startActivity(i);
-                i.putExtra("mensagem", msg);
             }
         });
     }
