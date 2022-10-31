@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 String msg = "Disjuntores de Baixa Tensão";
                 i.putExtra(Intent.EXTRA_TEXT, msg);
                 startActivity(i);
+                finish();
             }
         });
     }

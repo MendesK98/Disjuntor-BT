@@ -29,6 +29,7 @@ public class Disjuntores extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(a);
+                finish();
             }
         });
     }
