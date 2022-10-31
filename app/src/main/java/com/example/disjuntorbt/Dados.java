@@ -25,10 +25,10 @@ public class Dados extends AppCompatActivity {
             public void onClick(View view) {
 
                 String idV = id.getText().toString();
-                String nSV = nS.getText().toString();
+                String SerieNV = nS.getText().toString();
                 String fabric = fab.getText().toString();
 
-                String result ="Identificação: ".concat(idV).concat("\nNúmero de Série: ".concat(nSV).concat("\nFabicante: ".concat(fabric)));
+                String result ="Identificação: ".concat(idV).concat("\nNúmero de Série: ".concat(SerieNV).concat("\nFabicante: ".concat(fabric)));
 
                 res.setText(result);
 
