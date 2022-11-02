@@ -1,7 +1,5 @@
 package com.example.disjuntorbt;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent i = new Intent (this, Disjuntores.class);
+        Intent i = new Intent (this, Atributos.class);
 
 
         Button btCadastro = (Button) findViewById(R.id.btCadastro);

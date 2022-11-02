@@ -7,14 +7,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
 
-public class Disjuntores extends AppCompatActivity {
+public class Atributos extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_disjuntores);
+        setContentView(R.layout.activity_atributos);
 
         TextView tvGuts =  findViewById(R.id.tvGuts);
         Button dados =  findViewById(R.id.btDados);

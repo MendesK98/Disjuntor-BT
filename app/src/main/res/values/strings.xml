@@ -4,4 +4,7 @@
     <string name="fabricante">Fabricante:</string>
     <string name="n_serie">Nº de Série:</string>
     <string name="Send">Enviar</string>
+    <string name="iNom">Corrente Nominal</string>
+    <string name="vNom">Tensao Nominal</string>
+    <string name="releT">Tipo de Rele</string>
 </resources>
