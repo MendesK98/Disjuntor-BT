@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Dados extends AppCompatActivity {
 
@@ -19,8 +20,8 @@ public class Dados extends AppCompatActivity {
         TextInputEditText id = (TextInputEditText) findViewById(R.id.itId);
         TextInputEditText nS = (TextInputEditText) findViewById(R.id.itSN);
         TextInputEditText fab = (TextInputEditText) findViewById(R.id.itFab);
-        TextInputEditText vN = (TextInputEditText) findViewById(R.id.itvNom);
-        TextInputEditText iN = (TextInputEditText) findViewById(R.id.itiNom);
+        TextInputEditText iNom = (TextInputEditText) findViewById(R.id.itiNom);
+        TextInputEditText vNom = (TextInputEditText)findViewById(R.id.itvNom);
         TextView show = (TextView) findViewById(R.id.tvResultado);
         Button send = (Button) findViewById(R.id.send);
 
@@ -32,14 +33,15 @@ public class Dados extends AppCompatActivity {
                 x.tag = id.getText().toString();
                 x.nSerie = nS.getText().toString();
                 x.fabricante = fab.getText().toString();
+                x.iNominal = Double.parseDouble(iNom.getText().toString());
+                x.vNominal = Double.parseDouble(vNom.getText().toString());
+
+                Toast t = Toast.makeText(getApplicationContext(), "Dados processados com sucesso!!!", Toast.LENGTH_LONG);
+                t.show();
 
 
-                String iNS = Integer.toString(x.iNominal); //Verificando a necessidade de conversão de tipo dos valores para apresentar resultados
-                String vNS = Integer.toString(x.vNominal);
-
-                //RESOLVER APRESENTAÇÃO DOS RESULTADOS DE VALORES INTEIROS (TENSÃO E CORRENTE NOMINAIS)
-                String result ="Identificação: ".concat(x.tag).concat("\nNúmero de Série: ".concat(x.nSerie).concat("\nFabicante: "
-                        .concat(x.fabricante)).concat("\nCorrente Nominal: ").concat(iNS).concat("\nTensao Nominal: ").concat(vNS));
+                String result ="Identificação: ".concat(x.tag.concat("\nNúmero de Série: ".concat(x.nSerie.concat("\nFabicante: ".concat(x.fabricante)))))
+                        + "\nCorrente Nominal: " + x.iNominal + "\nTensão Nominal: " + x.vNominal;
 
                 show.setText(result);
             }
