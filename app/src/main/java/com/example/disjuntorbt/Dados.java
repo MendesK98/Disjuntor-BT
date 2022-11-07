@@ -1,6 +1,5 @@
 package com.example.disjuntorbt;
 
-import static java.lang.String.valueOf;
 
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
@@ -44,6 +43,7 @@ public class Dados extends AppCompatActivity {
                         + "\nCorrente Nominal: " + x.iNominal + "\nTensão Nominal: " + x.vNominal;
 
                 show.setText(result);
+
             }
         });
     }
