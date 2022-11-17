@@ -4,9 +4,13 @@
     <string name="id">Identificação:</string>
     <string name="fabricante">Fabricante:</string>
     <string name="n_serie">Nº de Série:</string>
+    <string name="tipo">Tipo do Disj.:</string>
     <string name="Send">Enviar</string>
-    <string name="iNom">Corrente Nominal</string>
-    <string name="vNom">Tensao Nominal</string>
+    <string name="interrupcao">Interrupão:</string>
+    <string name="tipoRele">Tipo do relé:</string>
+    <string name="Irele">I Nominal do relé:</string>
+    <string name="iNom">Corrente Nominal:</string>
+    <string name="vNom">Tensao Nominal:</string>
     <string name="releT">Tipo de Rele</string>
     <string name="condG">Condições Gerais</string>
 </resources>

@@ -21,6 +21,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.565" />
 
+    <Button
+        android:id="@+id/btEnsaios"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@color/white2"
+        android:text="@string/dados"
+        android:textColor="@color/blue2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+
 
     <Button
         android:id="@+id/btCondG"

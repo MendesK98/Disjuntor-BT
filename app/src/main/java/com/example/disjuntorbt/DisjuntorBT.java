@@ -2,13 +2,14 @@ package com.example.disjuntorbt;
 
 public class DisjuntorBT {
     //Dados do equipamento
-    String cliente;
-    String subestacao;
+
     String tag;
     String nSerie;
     String fabricante;
     String tipo;
     String tipoRele;
+    double iNominalRele;
+    double interrupcao;
     double vNominal;
     double iNominal;
 
@@ -33,22 +34,7 @@ public class DisjuntorBT {
     double rIS;
     double rIT;
 
-    public String getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
-    }
-
-    public String getSubestacao() {
-        return subestacao;
-    }
-
-    public void setSubestacao(String subestacao) {
-        this.subestacao = subestacao;
-    }
-
+    //Getters and Setters
     public String getTag() {
         return tag;
     }
@@ -88,6 +74,14 @@ public class DisjuntorBT {
     public void setTipoRele(String tipoRele) {
         this.tipoRele = tipoRele;
     }
+
+    public double getINominalRele() {return iNominalRele;}
+
+    public void setINominalRele (double iNominalRele) {this.iNominalRele = iNominalRele;}
+
+    public double getInterrupcao () {return interrupcao;}
+
+    public void setInterrupcao (double interrupcao) {this.interrupcao = interrupcao;}
 
     public double getvNominal() {
         return vNominal;
